@@ -69,7 +69,7 @@ export default function App() {
           // Permission granted, you can now display notifications
           new Notification("Welcome to WakeMeCrypto!", {
             body: "You will now receive notifications when your alarm is about to go off.",
-            timestamp: dayjs().unix(),
+            timestamp: Date.now(),
             icon: "https://www.wakemecrypto.com/favicon.ico",
             requireInteraction: true,
             silent: false
